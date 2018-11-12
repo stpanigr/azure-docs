@@ -138,11 +138,12 @@ To allow the load balancer to monitor the status of your app, you use a health p
 1. Click **All resources** in the left-hand menu, and then click **myLoadBalancer** from the resources list.
 2. Under **Settings**, click **Health probes**, then click **Add**.
 3. Use these values to create the health probe:
-    - *myHealthProbe* - for the name of the health probe.
+    - **myHealthProbe** - for the name of the health probe.
     - **HTTP** - for the protocol type.
-    - *80* - for the port number.
-    - *15* - for number of **Interval** in seconds between probe attempts.
-    - *2* - for number of **Unhealthy threshold** or consecutive probe failures that must occur before a VM is considered unhealthy.
+    - **80** - for the port number.
+    - **Healthprobe.aspx** for the URI path. You can either replace this value with any other URI or keep the default path value of **"\\"** to get the default URI.
+    - **15** - for number of **Interval** in seconds between probe attempts.
+    - **2** - for number of **Unhealthy threshold** or consecutive probe failures that must occur before a VM is considered unhealthy.
 4. Click **OK**.
 
    ![Adding a probe](./media/load-balancer-standard-public-portal/4-load-balancer-probes.png)
